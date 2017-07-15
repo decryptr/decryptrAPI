@@ -7,8 +7,11 @@ Depends: R (>= 3.3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: decryptr,
+Imports: reticulate,
+    decryptr,
     decryptrModels
 RoxygenNote: 6.0.1
-Remotes: decryptr/decryptr,
+Remotes: rstudio/reticulate,
+    decryptr/decryptr,
     decryptr/decryptrModels
+    
