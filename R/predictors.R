@@ -20,21 +20,21 @@ print_input <- function(img) {
 #'
 #' @export
 predict_captcha <- function(img, type) {
-  eval(parse(text = sprintf('predict_%s', type)))(img)
+  eval(parse(text = sprintf('predict_%s', type)))(base64enc::base64decode(img))
 }
 
 predict_rfb <- function(img) {
-  predict(rfb_model, newdata = decryptr::prepare(decryptr::read_captcha(img)))
+  predict(rfb_model, newdata = decryptr::prepare(img))
 }
 
 predict_trt <- function(img) {
-  predict(trt_model, newdata = decryptr::prepare(decryptr::read_captcha(img)))
+  predict(trt_model, newdata = decryptr::prepare(img))
 }
 
 predict_esaj <- function(img) {
-  predict(esaj_model, newdata = decryptr::prepare(decryptr::read_captcha(img)))
+  predict(esaj_model, newdata = decryptr::prepare(img))
 }
 
 predict_esaj <- function(img) {
-  predict(tjmg_model, newdata = decryptr::prepare(decryptr::read_captcha(img)))
+  predict(tjmg_model, newdata = decryptr::prepare(img))
 }
