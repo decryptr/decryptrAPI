@@ -4,12 +4,14 @@
 \alias{predict_captcha}
 \title{Predict captcha}
 \usage{
-predict_captcha(img, type)
+predict_captcha(img, type, base64 = TRUE)
 }
 \arguments{
 \item{img}{image content.}
 
 \item{type}{one of \code{rfb}, \code{trt}, \code{tjmg} or \code{esaj}.}
+
+\item{base64}{passing base64 image as argument.}
 }
 \description{
 Predict captcha using fitted keras models.
