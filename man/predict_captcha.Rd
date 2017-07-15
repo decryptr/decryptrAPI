@@ -6,6 +6,11 @@
 \usage{
 predict_captcha(img, type)
 }
+\arguments{
+\item{img}{image content.}
+
+\item{type}{one of \code{rfb}, \code{trt}, \code{tjmg} or \code{esaj}.}
+}
 \description{
-Predict captcha
+Predict captcha using fitted keras models.
 }

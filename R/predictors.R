@@ -1,6 +1,8 @@
-#' Print input for debug purposes
+#' Print input
 #'
-#' Print input for debug purposes
+#' Print input for debug purposes.
+#'
+#' @param img image content.
 #'
 #' @export
 print_input <- function(img) {
@@ -9,7 +11,10 @@ print_input <- function(img) {
 
 #' Predict captcha
 #'
-#' Predict captcha
+#' Predict captcha using fitted keras models.
+#'
+#' @param img image content.
+#' @param type one of \code{rfb}, \code{trt}, \code{tjmg} or \code{esaj}.
 #'
 #' @export
 predict_captcha <- function(img, type) {

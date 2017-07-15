@@ -2,10 +2,13 @@
 % Please edit documentation in R/predictors.R
 \name{print_input}
 \alias{print_input}
-\title{Print input for debug purposes}
+\title{Print input}
 \usage{
 print_input(img)
 }
+\arguments{
+\item{img}{image content.}
+}
 \description{
-Print input for debug purposes
+Print input for debug purposes.
 }
