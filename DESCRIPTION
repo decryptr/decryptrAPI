@@ -9,9 +9,9 @@ Encoding: UTF-8
 LazyData: true
 Imports: reticulate,
     decryptr,
-    decryptrModels
+    decryptrModels,
+    base64enc
 RoxygenNote: 6.0.1
 Remotes: rstudio/reticulate,
     decryptr/decryptr,
     decryptr/decryptrModels
-    
