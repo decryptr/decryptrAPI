@@ -10,5 +10,5 @@ LazyData: true
 Imports: decryptr,
     decryptrModels
 RoxygenNote: 6.0.1
-Remotes: decryptr,
-    decryptrModels
+Remotes: decryptr/decryptr,
+    decryptr/decryptrModels
