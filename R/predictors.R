@@ -1,14 +1,3 @@
-#' Print input
-#'
-#' Print input for debug purposes.
-#'
-#' @param img image content.
-#'
-#' @export
-print_input <- function(img) {
-  print(img)
-}
-
 #' Predict captcha
 #'
 #' Predict captcha using fitted keras models.
