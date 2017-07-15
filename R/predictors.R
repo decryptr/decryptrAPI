@@ -16,6 +16,8 @@ print_input <- function(img) {
 #' @param img image content.
 #' @param type one of \code{rfb}, \code{trt}, \code{tjmg} or \code{esaj}.
 #'
+#' @import decryptr
+#'
 #' @export
 predict_captcha <- function(img, type) {
   eval(parse(text = sprintf('predict_%s', type)))(img)
